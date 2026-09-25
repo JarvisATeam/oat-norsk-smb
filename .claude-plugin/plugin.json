@@ -1,0 +1,9 @@
+{
+  "name": "oat-norsk-smb",
+  "version": "0.1.0",
+  "description": "Norske arbeidsverktøy for håndverks- og SMB-bedrifter: firmaoppslag i Brønnøysundregistrene, tilbud med MVA, og lovlig purring og inkassovarsel.",
+  "author": { "name": "OAT – Olsen's A-Team" },
+  "homepage": "https://giniesystem.no",
+  "license": "MIT",
+  "keywords": ["norsk", "smb", "håndverker", "brreg", "tilbud", "purring", "inkasso", "mva"]
+}
