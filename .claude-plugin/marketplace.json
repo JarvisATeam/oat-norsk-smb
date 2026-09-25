@@ -1,0 +1,7 @@
+{
+  "name": "oat-marketplace",
+  "owner": { "name": "OAT – Olsen's A-Team" },
+  "plugins": [
+    { "name": "oat-norsk-smb", "source": "./", "description": "Norske verktøy for håndverkere og SMB: Brønnøysund-oppslag, tilbud med MVA, lovlig purring." }
+  ]
+}
