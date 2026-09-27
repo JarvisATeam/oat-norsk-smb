@@ -1,7 +1,8 @@
 {
   "name": "oat-norsk-smb",
   "displayName": "OAT Norsk SMB",
-  "version": "0.1.1",
+  "icon": "./assets/icon.png",
+  "version": "0.1.2",
   "description": "Norske arbeidsverktøy for håndverks- og SMB-bedrifter: firmaoppslag i Brønnøysundregistrene, tilbud med MVA, og lovlig purring og inkassovarsel.",
   "author": {
     "name": "OAT – Olsen's A-Team"

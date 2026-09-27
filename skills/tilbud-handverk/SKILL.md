@@ -35,7 +35,7 @@ Hvis kunden er en bedrift og org.nr er kjent, bruk skillet `brreg-oppslag` for �
 5. Pris: tabell med linjer, sum eks. MVA, MVA, total.
 6. Fremdrift: oppstart og varighet.
 7. Forbehold: skjulte feil, endringer, tilgang. Korte punkter.
-8. Betaling: frist og eventuelle a konto-avdrag.
+8. Betaling: frist og eventuelle a konto-avdrag, altså delbetalinger underveis i jobben.
 9. Aksept: frist og hvordan kunden aksepterer ("svar ja på e-post" holder).
 
 ## Skrivestil

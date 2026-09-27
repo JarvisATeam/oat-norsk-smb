@@ -9,7 +9,7 @@ Hent fakta om en norsk virksomhet fra Enhetsregisteret. Bruk kun data fra regist
 
 ## Kilde
 
-Åpent API, ingen nøkkel:
+Åpent API, ingen nøkkel. `{orgnr}` byttes ut med organisasjonsnummeret. `{navn}` byttes ut med firmanavnet det søkes på.
 
 ```
 https://data.brreg.no/enhetsregisteret/api/enheter/{orgnr}
@@ -22,7 +22,7 @@ Hent med `curl -s` i Bash når shell er tilgjengelig. Hvis nettverket er blokker
 ## Fremgangsmåte
 
 1. Rens input. Fjern mellomrom i org.nr. Et gyldig org.nr har 9 sifre.
-2. Valider kontrollsiffer (MOD11, vekter 3,2,7,6,5,4,3,2). Si fra hvis det er ugyldig før du slår opp.
+2. Valider kontrollsifferet. Det siste sifferet i et org.nr er et kontrollsiffer som avslører skrivefeil. Metoden heter MOD11: gang de 8 første sifrene med vektene 3,2,7,6,5,4,3,2 og summer. Del summen på 11 og finn resten. Kontrollsifferet er 11 minus resten. Blir svaret 11, er kontrollsifferet 0. Blir det 10, er nummeret ugyldig. Si fra hvis nummeret er ugyldig før du slår opp.
 3. Søk på navn hvis brukeren ikke har org.nr. Vis maks 5 treff med navn, org.nr og kommune. La brukeren velge.
 4. Hent enheten. Hent roller hvis brukeren spør om daglig leder, styre eller signatur.
 5. Presenter svaret kort på norsk.
@@ -32,7 +32,7 @@ Hent med `curl -s` i Bash når shell er tilgjengelig. Hvis nettverket er blokker
 Skriv korte setninger. Ta med kun feltene som finnes:
 
 - Navn og org.nr
-- Organisasjonsform (AS, ENK, NUF osv.)
+- Organisasjonsform, for eksempel AS (aksjeselskap), ENK (enkeltpersonforetak) eller NUF (norskregistrert utenlandsk foretak)
 - Næringskode med beskrivelse
 - Forretningsadresse
 - Antall ansatte, hvis oppgitt
@@ -42,12 +42,12 @@ Skriv korte setninger. Ta med kun feltene som finnes:
 
 ## Risikoflagg før tilbud eller kreditt
 
-Flagg dette tydelig når brukeren vurderer å levere på kreditt:
+Flagg dette tydelig når brukeren vurderer å levere på kreditt. Navnene i kodeformat er feltnavnene i svaret fra registeret.
 
-- `konkurs`, `underAvvikling` eller `underTvangsavviklingEllerTvangsopplosning` er true
+- `konkurs` (firmaet er konkurs), `underAvvikling` (firmaet legges ned frivillig) eller `underTvangsavviklingEllerTvangsopplosning` (firmaet tvangsoppløses) er true, altså sant
 - Ikke registrert i MVA-registeret selv om virksomheten fakturerer
 - Stiftet for under 6 måneder siden
-- Slettet enhet (`slettedato` finnes)
+- Slettet enhet (feltet `slettedato`, datoen firmaet ble slettet, finnes)
 
 Skriv at flaggene er signaler, ikke en kredittvurdering. Anbefal full kredittsjekk ved store beløp.
 

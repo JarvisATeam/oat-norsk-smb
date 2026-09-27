@@ -9,7 +9,7 @@ Få pengene inn uten å miste kunden, og uten å bryte inkassoloven.
 
 ## Gebyrsatser (kilde: Finanstilsynet, 2026)
 
-- Inkassosats 2026: 750 kr
+- Inkassosats 2026: 750 kr. Inkassosatsen er en grunnsats myndighetene fastsetter hvert år. Gebyrene regnes ut fra den.
 - Maks purregebyr: 38 kr
 - Maks gebyr for inkassovarsel: 38 kr
 
@@ -33,7 +33,7 @@ Satsene endres årlig. Hvis dato er etter 31.12.2026, be brukeren sjekke gjelden
 
 - Fakturanummer, fakturadato, opprinnelig forfall, beløp.
 - Nytt forfall med dato.
-- Kontonummer og KID. Be brukeren fylle inn. Aldri gjett.
+- Kontonummer og KID (kundeidentifikasjonsnummer, som kunden skriver inn i nettbanken). Be brukeren fylle inn. Aldri gjett.
 - Gebyr bare når trinnet tillater det.
 - Kontaktinfo hvis kunden mener kravet er feil.
 

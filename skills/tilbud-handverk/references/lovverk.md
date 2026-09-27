@@ -13,7 +13,7 @@ Dette er en oversikt, ikke juridisk rådgivning. Ved tvil: be brukeren sjekke me
 ## Bedrift (næringsdrivende)
 
 - Avtaleloven og alminnelig kontraktsrett. Mer avtalefrihet.
-- Større entrepriser bruker ofte NS 8406 eller NS 8405. Nevn standarden bare hvis brukeren bruker den.
+- Større entrepriser bruker ofte NS 8406 eller NS 8405. Det er ferdige kontraktsmaler fra Standard Norge. NS 8406 er den forenklede versjonen for mindre jobber. NS 8405 er den fulle versjonen. Nevn standarden bare hvis brukeren bruker den.
 
 ## Kilder
 
