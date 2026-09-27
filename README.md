@@ -8,6 +8,23 @@ Norske arbeidsverktøy for håndverkere og små bedrifter i Claude Cowork og Cla
 - **tilbud-handverk**: Ferdige tilbud med riktig MVA, omfang, forbehold og akseptfrist. Tilpasset forbruker og bedrift.
 - **purring-inkasso**: Påminnelse, purring og inkassovarsel med lovlige frister og gebyrer.
 
+## Installasjon
+
+I Claude Code, fra terminalen:
+
+```bash
+claude plugin marketplace add JarvisATeam/oat-norsk-smb
+claude plugin install oat-norsk-smb@oat-marketplace
+```
+
+Eller i én kommando inne i en økt:
+
+```
+/plugin install oat-norsk-smb --marketplace JarvisATeam/oat-norsk-smb
+```
+
+Skillene dukker opp som `/oat-norsk-smb:brreg-oppslag`, `/oat-norsk-smb:tilbud-handverk` og `/oat-norsk-smb:purring-inkasso`. Oppdater senere med `claude plugin update oat-norsk-smb@oat-marketplace`.
+
 ## Eksempler
 
 - "Sjekk org.nr 923609016 før vi sender tilbud"
@@ -28,4 +45,4 @@ OAT – Olsen's A-Team setter opp dette mot regnskap, e-post og CRM for norske S
 
 ## Lisens
 
-MIT
+MIT. Se [LICENSE](LICENSE).
